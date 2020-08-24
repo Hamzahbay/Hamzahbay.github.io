@@ -1,0 +1,189 @@
+.bg {
+   background-image: url(../../img/PL-logo7.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   height: 100vh;
+   padding: 0;
+}
+
+.content {
+    background-color: #37003cc7;
+    width: 50vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 4px 2px 10px 1px black;
+}
+.content .choice {
+    text-align: center;
+    margin-top: 2%;
+}
+.content .choice span {
+    padding: 2% 5%;
+    cursor: pointer;
+    font-size: smaller;
+    /* border-radius: 0px 0px 10px 0px; */
+    /* box-shadow: 4px 4px 0px 0px; */
+}
+.content .box {
+    margin-left: 5%;
+}
+.content .box p {
+    margin-top: 5%;
+}
+.content .box input {
+    outline: none;
+    width: 95%;
+    font-size: large;
+    border: none;
+    border-bottom: solid 1px #37003c;
+    border-radius: 10px;
+    transition: ease-in 250ms;
+}
+.content .box input:focus {
+    background-color: #05000533;
+    color: whitesmoke;
+}
+.content .box #agree {
+    width: 0%;
+}
+.content .box button {
+    border-radius: 10px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    background-color: #05000533;
+    border: none;
+    font-size: larger;
+    color: whitesmoke;
+    padding: .5%;
+    width: 95%;
+}
+.content .box button:hover {
+    background-color: whitesmoke;
+    color: #050005af;
+    transition: ease-in-out 300ms;
+}
+.content .box .forgot:hover {
+    background-color: whitesmoke;
+    color: #050005af;
+    transition: ease-in-out 300ms;
+}
+.content .box .forgot {
+    color: whitesmoke;
+    margin-top: 5%;
+    width: 94.5%;
+    border-radius: 10px;
+    font-size: small;
+    text-align: center;
+    padding: .5%;
+    background-color: #05000533;
+}
+.content .box span {
+    color: #37003cc7;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    z-index: 3;
+    color: #37003c;
+    background-color: lightgray;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+.popup h3 {
+    text-align: center;
+    margin: 0 5%;
+    margin-top: 5%;
+    padding: 2%;
+    color: whitesmoke;
+    background-color: #37003c;
+    border-radius: 10px 10px 0px 0px;
+}
+.popup ol li {
+    margin: 10%;
+    padding: 2%;
+    border-radius: 4px;
+}
+.popup ol {
+    border: solid 2px #37003c;
+    margin: 0 5%;
+    margin-top: -5%;
+    margin-bottom: -4.8%;
+    border-radius: 10px;
+    background-color: #37003c69;
+}
+.popup ol li:hover {
+    color: #37003c;
+    background-color: whitesmoke;
+}
+.popup div {
+    color: whitesmoke;
+    background-color: #37003c;
+    margin: 0 5%;
+    margin-bottom: 5%;
+    padding: 1%;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.popup div:hover {
+    color: #37003c;
+    background-color: whitesmoke;
+    transition: ease-in 200ms;
+}
+.popup-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.651);
+    z-index: 2;
+}
+
+.on {
+    /* border-radius: 10px; */
+    border-bottom: solid 1px whitesmoke;
+}
+
+@media(max-width: 600px) {
+    .content {
+        background-color: #37003cc7;
+        width: 80vw;
+        border-radius: 8px;
+    }
+    .popup {
+        width: 80vw;
+        font-size: small;
+    }
+}
+@media(max-width: 800px) {
+    .content {
+        background-color: #37003cc7;
+        width: 70vw;
+        border-radius: 8px;
+    }
+    .popup {
+        width: 70vw;
+    }
+}
+@media(max-width: 1000px) {
+    .content {
+        background-color: #37003cc7;
+        width: 60vw;
+        border-radius: 8px;
+    }
+    .popup {
+        width: 60vw;
+    }
+}

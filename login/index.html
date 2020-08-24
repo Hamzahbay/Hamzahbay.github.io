@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style-nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLscore login/register</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo"><img src="../img/logoepl2.png"><span><b>PL</b><em>score</em></span></div>
+        <i class="material-icons" style="font-size:30px;color: whitesmoke;">view_headline</i>
+        <!-- Desktop Nav -->
+        <ul class="max-line">
+            <li class="max-list"><a href="../index.html"><i class="fa fa-home" style="font-size:26px;"></i></a></li>
+            <li class="max-list"><a href="#">Berita</a></li>
+            <li class="max-list"><a href="#">Pertandingan</a></li>
+            <li class="max-list"><a href="../spesification/index.html">Spesifikasi</a></li>
+            <li class="max-list actived"><a href="index.html"><i class="fa fa-user-circle" style="font-size:26px;"><span id="usename-account"></span></i></a></li>
+        </ul>
+        <!-- Android/Apple Nav -->
+        <div class="for-js nav-menu">
+            <ul class="min-line">
+                <li class="min-list"><a href="../index.html">Beranda</a></li>
+                <li class="min-list"><a href="#">Berita</a></li>
+                <li class="min-list"><a href="#">Pertandingan</a></li>
+                <li class="min-list"><a href="../spesification/index.html">Spesifikasi</a></li>
+                <li class="min-list actived"><a href="index.html"><i class="fa fa-user-circle" style="font-size:26px;"><span id="usename-account"></span></i></a></li>
+            </ul>
+        </div> 
+    </div>
+
+    <!-- Background -->
+    <div class="bg">
+    </div>
+    
+    <!-- Login/Register Content -->
+    <div class="content">
+        <div class="choice">
+            <span class="on">Masuk Akun</span>
+            <span>Buat Akun</span>
+        </div>
+        <div class="box">
+            <form class="login" action="" method="get">
+                <p>Username </p>
+                <input type="text" name="username" id="username" placeholder="nama pengguna" minlength="4" maxlength="12" autocomplete="off" required>
+                <p>Sandi </p>
+                <input type="password" name="password" id="password" placeholder="kata sandi" autocomplete="off" minlength="6" maxlength="20" required>
+                <a href="#"><div class="forgot"> lupa password/username </div></a>
+                <p><button type="submit">Masuk</button></p>
+            </form>
+            <form class="register display-none" action="" method="get">
+                <p>Username </p>
+                <input type="text" name="usernameReg" id="usernameReg" placeholder="nama pengguna" minlength="4" maxlength="12" autocomplete="off" required>
+                <p>Sandi </p>
+                <input type="password" name="passwordReg" id="passwordReg" placeholder="kata sandi" autocomplete="off" minlength="6" maxlength="20" required>
+                <p>Email </p>
+                <input type="email" name="emailReg" id="emailReg" placeholder="email" required>
+                <p><input type="checkbox" name="agree" id="agree" required><label for="agree">Saya setuju dengan ketentuan yang berlaku.</label> <span>klik disini</span></p>
+                <p><button type="submit">Buat</button></p>
+            </form>
+        </div>
+    </div>
+    <div class="popup-bg display-none"></div>
+    <div class="popup display-none">
+        <h3>Ketentuan PLscore</h3>
+        <ol>
+            <li>Mempergunakan web ini dengan bijak</li>
+            <li>Menjaga kata-kata</li>
+            <li>Tidak menggunakan akun ilegal</li>
+        </ol>
+        <div>Mengerti</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <span>PLscore</span><p>Copyright @ 2020 | PLscore Allright deserved | <a href="#">Contact</a></p>
+    </div>
+
+<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

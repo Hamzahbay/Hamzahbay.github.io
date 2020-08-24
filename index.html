@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style-nav.css">
+    <link rel="stylesheet" href="css/style-slide-news.css">
+    <link rel="stylesheet" href="css/style-content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLscore Beranda</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo"><img src="img/logoepl2.png"><span><b>PL</b><em>score</em></span></div>
+        <i class="material-icons" style="font-size:30px;color: whitesmoke;">view_headline</i>
+        <!-- Desktop Nav -->
+        <ul class="max-line">
+            <li class="max-list actived"><a href="#"><i class="fa fa-home" style="font-size:26px;"></i></a></li>
+            <li class="max-list"><a href="#">Berita</a></li>
+            <li class="max-list"><a href="#">Pertandingan</a></li>
+            <li class="max-list"><a href="spesification/index.html">Spesifikasi</a></li>
+            <li class="max-list"><a href="login/index.html"><i class="fa fa-user-circle" style="font-size:26px;"><span id="usename-account"></span></i></a></li>
+        </ul>
+        <!-- Android/Apple Nav -->
+        <div class="for-js nav-menu">
+            <ul class="min-line">
+                <li class="min-list actived"><a href="#">Beranda</a></li>
+                <li class="min-list"><a href="#">Berita</a></li>
+                <li class="min-list"><a href="#">Pertandingan</a></li>
+                <li class="min-list"><a href="spesification/index.html">Spesifikasi</a></li>
+                <li class="min-list"><a href="login/index.html"><i class="fa fa-user-circle" style="font-size:26px;"><span id="usename-account"></span></i></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="container">
+        <!-- Slideshow -->
+        <div class="news-slideshow">
+            <div class="news-slideshow-img">
+                <div><img src="img/img1.jpg" class="show"></div>
+                <div><img src="img/img6.jpg" class="hide"></div>
+                <div><img src="img/img7.jpg" class="hide"></div>
+                <div><img src="img/img8.jpg" class="hide"></div>
+            </div>
+            <div class="news-slideshow-ico">
+                <div class="angle">
+                    <i class='fas fa-angle-left'></i>
+                    <i class='fas fa-angle-right'></i>
+                </div>
+                <div class="dot">
+                    <i class='fas fa-square actived-i'></i>
+                    <i class='fas fa-square'></i>
+                    <i class='fas fa-square'></i>
+                    <i class='fas fa-square'></i>
+                </div>
+            </div>
+            <div class="news-slideshow-text">
+                <div>
+                    <h2><b>Premier League telah Berakhir</b></h2>
+                    <h4>ini dia daftar pemain terbaik dari Tim-tim Premier...</h4>
+                    <a href="#">Baca Sekarang</a>
+                </div>
+                <div class="display-none">
+                    <h2><b>klopp pengubah berlian</b></h2>
+                    <h4>bagaimana cara Jurgen Klopp mengubah pemain seharga....</h4>
+                    <a href="#">Baca Sekarang</a>
+                </div>
+                <div class="display-none">
+                    <h2><b>E.Hazard ingin kembali ke Chelsea</b></h2>
+                    <h4>Hazard berjanji bakal kembali ke Chelsea jika ia...</h4>
+                    <a href="#">Baca Sekarang</a>
+                </div>
+                <div class="display-none">
+                    <h2><b>Marcelo Bielsa Pelatih...</b></h2>
+                    <h4>Pelatih Leeds United membuat sejarah baru setelah...</h4>
+                    <a href="#">Baca Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <!-- Last Fixture -->
+        <div class="fixture">
+            <div class="last-fix">
+                <h2>Hasil dari pertandingan Terakhir</h2>
+                <table>
+                    <tr class="team-fix team-fix0"><td class="team-fix-home text-left" ><img src="img/chelsea-logo.png" alt=""></td><td></td><td class="score-fix-home text-center" >2</td><td class="text-center" colspan="2"> VS </td><td class="score-fix-away text-center" >0</td><td></td><td class="img-fix-away text-right"><img src="img/wolves-logo.png" alt=""></td></tr>
+                    <tr class="detail-fix detail-fix0 display-none"><td class="detail-coach-home text-left" colspan="2">F. Lampard</td><td class="text-center">Pelatih</td><td class="detail-ico-coach-home text-center"><i class='fas fa-portrait'></i></td><td class="detail-ico-coach-away text-center"><i class='fas fa-portrait'></i></td><td class="text-center">Pelatih</td><td class="detail-coach-home text-right" colspan="2">Nuno Espírito</td></tr>
+                    <tr class="detail-fix detail-fix0 display-none"><td class="detail-goal-fix-home text-left" colspan="2">M. Mount</td><td class="detail-minute-goal-fix-home text-center">46+1</td><td class="detail-ico-fix-home text-center"><i class="fa fa-soccer-ball-o"></i></td><td class="detail-ico-fix-away text-center"></td><td class="detail-minute-goal-fix-away text-center"></td><td class="detail-goal-fix-away text-right" colspan="2"></td></tr>
+                    <tr class="detail-fix detail-fix0 display-none"><td class="detail-goal-fix-home text-left" colspan="2">O. Giroud</td><td class="detail-minute-goal-fix-home text-center">46+4</td><td class="detail-ico-fix-home text-center"><i class="fa fa-soccer-ball-o"></i></td><td class="detail-ico-fix-away text-center"></td><td class="detail-minute-goal-fix-away text-center"></td><td class="detail-goal-fix-away text-right" colspan="2"></td></tr>
+                    <tr class="team-fix team-fix1"><td class="team-fix-home text-left" ><img src="img/Mu-logo.png" alt=""></td><td></td><td class="score-fix-home text-center" >2</td><td class="text-center" colspan="2"> VS </td><td class="score-fix-away text-center" >0</td><td></td><td class="img-fix-away text-right"><img src="img/leichester-logo.png" alt=""></td></tr>
+                    <tr class="detail-fix detail-fix1 display-none"><td class="detail-coach-home text-left" colspan="2">Ole Solkjaer</td><td class="text-center">Pelatih</td><td class="detail-ico-coach-home text-center"><i class='fas fa-portrait'></i></td><td class="detail-ico-coach-away text-center"><i class='fas fa-portrait'></i></td><td class="text-center">Pelatih</td><td class="detail-coach-home text-right" colspan="2">B. Rodgers</td></tr>
+                    <tr class="detail-fix detail-fix1 display-none"><td class="detail-goal-fix-home text-left" colspan="2">Bruno F. (P)</td><td class="detail-minute-goal-fix-home text-center">71</td><td class="detail-ico-fix-home text-center"><i class="fa fa-soccer-ball-o"></i></td><td class="detail-ico-fix-away text-center"></td><td class="detail-minute-goal-fix-away text-center"></td><td class="detail-goal-fix-away text-right" colspan="2"></td></tr>
+                    <tr class="detail-fix detail-fix1 display-none"><td class="detail-goal-fix-home text-left" colspan="2"></td><td class="detail-minute-goal-fix-home text-center"></td><td class="detail-ico-fix-home text-center"></td><td class="detail-ico-fix-away text-center"><i class='fas fa-square' style="color: red;"></i></td><td class="detail-minute-goal-fix-away text-center">90+4</td><td class="detail-goal-fix-away text-right" colspan="2">J.Evans</td></tr>
+                    <tr class="detail-fix detail-fix1 display-none"><td class="detail-goal-fix-home text-left" colspan="2">J. Lingard</td><td class="detail-minute-goal-fix-home text-center">90+8</td><td class="detail-ico-fix-home text-center"><i class="fa fa-soccer-ball-o"></i></td><td class="detail-ico-fix-away text-center"></td><td class="detail-minute-goal-fix-away text-center"></td><td class="detail-goal-fix-away text-right" colspan="2"></td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <span>PLscore</span><p>Copyright @ 2020 | PLscore Allright deserved | <a href="#">Contact</a></p>
+    </div>
+
+    
+<script src="js/script.js"></script>
+</body>
+</html>

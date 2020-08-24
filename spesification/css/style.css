@@ -1,0 +1,44 @@
+.draft {
+    text-align: center;
+    margin-bottom: 20vh;
+}
+.draft .teams {
+    display: inline-flex;
+    margin: 5% 2%;
+    width: 20%;
+    min-width: 200px;
+    cursor: pointer;
+}
+.draft .teams .card-teams {
+    border-radius: 10px;
+    width: 100%;
+    border: solid 2px #37003c;
+    background-color: #37003c79;
+}
+.draft .teams .card-teams div {
+    color: whitesmoke;
+    border-radius: 5px 5px 0 0;
+    padding: 5% 0;
+    background-color: #37003c;
+}
+.draft .teams img {
+    padding: 0 1%;
+    padding-top: 10%;
+    width: 20%;
+    min-width: 150px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 750ms;
+}
+.draft .teams img:hover {
+    transform: scale(0.8);
+}
+.draft .teams .card-teams:hover {
+    box-shadow: 5px 5px 10px 2px;
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 500ms;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+    color: #37003c;
+}
+

@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    background-color: lightgray;
+}
+.navbar {
+    background-color: #37003c;
+    position: sticky;
+    padding: 40px;
+    top: 0;
+    z-index: 5;
+    margin: 0;
+}
+.navbar ul li span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.navbar .logo span {
+    position: absolute;
+    margin-left: 60px;
+    top: 30%;
+    color: whitesmoke;
+    font-size: 30px;
+}
+.navbar .logo span em {
+    font-size: smaller;
+    text-decoration: line-through;
+}
+.navbar .max-line {
+    display: inline-flex;
+    list-style: none;
+}
+.navbar .logo img {
+    width: 80px;
+    position: absolute;
+    top: 8px;
+    left: 2vw;
+}
+.navbar .max-line {
+    top: 10%;
+    right: 2vw;
+    position: absolute;
+    z-index: 7;
+}
+.navbar .max-line .max-list {
+    margin-top: 2px;
+}
+.navbar .max-line .max-list a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 30px 2vw;
+    box-sizing: border-box;
+}
+.navbar .max-line .max-list a:hover , .navbar .material-icons:hover{
+    color: #87508b;
+    transition: ease-in-out 200ms;
+}
+
+
+.navbar .material-icons {
+    display: none;
+    float: right;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.navbar .min-line {
+    margin-top: 40px;
+    position: absolute;
+    background-color: #37003c;
+    border-radius: 0 0 10px 10px;
+    padding: 0 40px;
+    padding-top: 5%;
+    top: 34%;
+    right: 0;
+    transition: ease 200ms;
+    z-index: 5;
+    display: none;
+}
+.navbar .min-line .min-list {
+    margin-bottom: 20px;
+    list-style: none;
+}
+.navbar .min-line .min-list a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.navbar .min-line .min-list a:hover {
+    color: #87508b;
+    transition: ease-in-out 200ms;
+    transform: scale(0.8);
+}
+.navbar .min-line .list-min1 a {
+    padding-right: 59px;
+}
+.navbar .min-line .list-min2 a {
+    padding-right: 82px;
+}
+.navbar .min-line .list-min4 a {
+    padding-right: 63px;
+}
+.navbar .min-line .list-min5 a {
+    padding-right: 116.5px;
+}
+.for-js {
+    position: fixed;
+    right: 0;
+    top: 3vw;
+    transition: cubic-bezier(0.86, 0, 0.07, 1) 300ms;
+}
+
+.nav-menu {
+    right: -100%;
+}
+.display-none {
+    display: none;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
+.navbar .max-line .actived a, .navbar .max-line .actived i {
+    color: #87508b;
+    transform: scale(0.8);
+}
+.navbar .min-line .actived a, .navbar .max-line .actived i {
+    color: #87508b;
+    transform: scale(0.8);
+}
+.animate1 {
+    animation: anm1 linear 100ms;
+}
+@keyframes anm1 {
+    20%{
+        transform: translateX(-5px);
+    }
+    40%{
+        transform: translateX(5px);
+    }
+    60%{
+        transform: translateX(-5px);
+    }
+    80%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+}
+
+.footer {
+    background-color: #37003c;
+    padding: .5% 0;
+    text-align: center;
+    color: whitesmoke;
+    font-size: smaller;
+}
+
+@media (max-width: 900px) {
+    .navbar .max-line {
+        display: none;
+    }
+    .navbar .material-icons, .navbar .min-line, .min-bg {
+        display: block;
+    }
+    .for-js {
+        top: 4vw;
+    }
+}
+@media (max-width: 600px) {
+    .navbar .logo span {
+        top: 40%;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    .navbar .logo img {
+        width: 60px;
+        top: 8px;
+    }
+    .navbar {
+        padding: 30px;
+    }
+    .footer {
+        font-size: xx-small;
+    }
+    .for-js {
+        top: 3.4vw;
+    }
+}
+@media (max-width: 240px) {
+    .navbar .logo img {
+        display: none;
+    }
+    .navbar .logo span {
+        margin-left: -20px;
+    }
+    .nav-menu {
+        right: -500%;
+    }
+}
